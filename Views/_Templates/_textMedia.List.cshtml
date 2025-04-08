@@ -1,0 +1,16 @@
+﻿<section class="m-standard">
+    <div class="content-small">
+        <ew-list for-key="textMedia">
+            <div class="text-media  @(SelectedOption("reversed") ? "reversed" : "")">
+                <div class="media">
+                    <ew-template for-key="image"/>
+                </div>
+                <div class="content">
+                      <span class="tag" ew-for="tag"></span>
+                    <h2 class="size-sm m-t-z m-b-z" ew-for="header"></h2>
+                    <p ew-for="description"></p>
+                </div>
+            </div>
+        </ew-list>
+    </div>
+</section>

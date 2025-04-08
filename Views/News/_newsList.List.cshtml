@@ -1,0 +1,19 @@
+﻿<section class="m-standard">
+    <div class="content-standard">
+
+    <div class="news-list">
+        <ew-list for-key="newsList">
+            <a ew-for-href="$" class="news-card">
+                <ew-template for-key="image"/>
+                <div class="date">
+                    @(DateTime.TryParse(Value("Date"), out var date) ? date.ToString("dd MMMM yyyy") : "")
+                </div>
+                <div class="content">
+                    <h3 ew-for="$label" class="m-t-z m-b-z color-white size-xs"></h3>
+                </div>
+            </a>
+        </ew-list>
+    </div>
+    </div>
+
+</section>

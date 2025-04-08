@@ -1,0 +1,18 @@
+﻿<section class="m-standard">
+    <div class="content-standard">
+        <div class="text-block-md">
+              <h2 class="size-md m-t-z m-b-2" ew-for="header"></h2>
+              <p ew-for="description"></p>
+        </div>
+
+        <div class="team-members" ew-list="teamMembers">
+            <div class="team-member-card">
+                <ew-template for-key="image">
+                <div class="content">
+                    <h3 class="color-white size-xs m-t-z m-b-z" ew-for="$label"></h3>
+                    <p class="color-white m-t-z m-b-z" ew-for="position"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

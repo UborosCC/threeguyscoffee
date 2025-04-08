@@ -1,0 +1,32 @@
+﻿<footer class="footer">
+    <div class="content-standard">
+        <a class="logotype" href="/">
+            <img ew-for-src="logotype" />
+        </a>
+        <div class="footer-bottom">
+            <div class="footer-content">
+                <h2 class="footer-title m-t-z" ew-for="header"></h2>
+                <p ew-for="description"></p>
+            </div>
+
+            <div class="footer-linkblock">
+                <ew-list for-key="linkBlock">
+                    <ul ew-list="links">
+                        <li><a ew-for-href="$" ew-for-label="$"></a></li>
+                    </ul>
+                </ew-list>
+               
+                    <ul class="social-media" ew-list="$settings/socialLinks" >
+                        <li>
+                            <a ew-for-href="link">
+                                <ew-template for-key="icon" render-always="true"/>
+                            </a>
+                        </li>
+                    </ul>
+             
+            </div>
+        </div>
+
+
+    </div>
+</footer>

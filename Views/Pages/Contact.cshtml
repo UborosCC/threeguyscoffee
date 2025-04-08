@@ -1,0 +1,27 @@
+<section class="m-standard">
+    <div class="content-small">
+        <div class="text-block-md">
+            <h2 class="size-md m-t-z m-b-2" ew-for="header"></h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-details">
+                <div class="ew">
+                    <ew-template for-key="html" />
+                </div>
+                <ul class="social-media" ew-list="$settings/socialLinks">
+                    <li>
+                        <a ew-for-href="link">
+                            <ew-template for-key="icon" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <ew-template for-key="DefaultContactForm" />
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<ew-template for-key="teams" />

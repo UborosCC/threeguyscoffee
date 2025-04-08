@@ -1,0 +1,12 @@
+﻿{
+  "Open": "Open",
+  "NewsletterEmailText": "Email",
+  "NewsletterButtonText": "Join",
+  "NotFound404_Label": "404 - Not found",
+  "NotFound404_Content": "The requested content was not found.",
+  "Det-h-r-f-ltet-m-ste-fyllas-i": "Det h�r f�ltet m�ste fyllas i.",
+  "V-rdet-r-inte-giltigt": "V�rdet �r inte giltigt.",
+  "Send-message": "Send message",
+  "ServerError500_Label": "ServerError500_Label",
+  "ServerError500_Content": "ServerError500_Content"
+}

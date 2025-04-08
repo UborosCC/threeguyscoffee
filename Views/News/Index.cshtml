@@ -1,0 +1,22 @@
+﻿<section class="m-standard news-page">
+    <div class="content-xsmall m-h-autos">
+        <span class="tag" ew-for="$Module/$label"></span>
+        <h1 class="size-lg m-t-z m-b-z" ew-for="$label"></h1>
+
+        <p class="preamble" ew-for="introduction"></p>
+
+        <div class="news-date">
+            @(DateTime.TryParse(Value("Date"), out var date) ? date.ToString("dd MMMM yyyy") : "")
+        </div>
+        <div class="news-image">
+            <ew-template for-key="image" />
+        </div>
+
+        <div class="ew m-b-4">
+            <ew-template for-key="description" />
+        </div>
+
+    </div>
+</section>
+
+<ew-template for-key="newsList" />
