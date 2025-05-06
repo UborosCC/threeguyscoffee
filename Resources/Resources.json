@@ -8,5 +8,7 @@
   "V-rdet-r-inte-giltigt": "V�rdet �r inte giltigt.",
   "Send-message": "Send message",
   "ServerError500_Label": "ServerError500_Label",
-  "ServerError500_Content": "ServerError500_Content"
+  "ServerError500_Content": "ServerError500_Content",
+  "Det-har-faltet-maste-fyllas-i": "Det här fältet måste fyllas i.",
+  "Vardet-ar-inte-giltigt": "Värdet är inte giltigt."
 }

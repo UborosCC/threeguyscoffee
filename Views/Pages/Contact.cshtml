@@ -22,6 +22,41 @@
         </div>
     </div>
 
+    <h1>Star Wars Characters</h1>
+    <label for="character-name">Search for a character:</label>
+    <input type="text" id="character-name" placeholder="Character Name: e.x Luke">
+    <button onclick="searchCharacter()">Search</button>
+    <pre id="swapi-result">Waiting...</pre>
+
+    <script>
+        function searchCharacter() {
+            const name = document.getElementById("character-name").value.trim();
+
+            if (!name) {
+                document.getElementById("swapi-result").textContent = "Please enter a character name";
+                return;
+            }
+
+            fetch(`/data/people/search?name=${encodeURIComponent(name)}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Character not Found");
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.lenght === 0) {
+                    document.getElementById("swapi-result").textContent = "No Characters Found";
+                } else {
+                    document.getElementById("swapi-result").textContent = JSON.stringify(data, null, 2);
+                }
+            })
+            .catch(Error => {
+                document.getElementById("swapi-result").textContent = "Errpr:" + Error.message; 
+            });
+        }
+    </script>
+
 </section>
 
 <ew-template for-key="teams" />
